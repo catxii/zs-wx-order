@@ -1,0 +1,105 @@
+
+/*//页面样式文件*/
+@import url("base.less");
+
+// 首页
+.content-index-bg {
+	background:url("@{imgsrc}/hotel-index-bg_02.jpg") no-repeat;
+	background-size: cover;
+}
+.index-banner {
+	width: 90%;
+	height: 80%;
+	margin: 3rem auto;
+	li {
+		.black-opcity-bg;
+		height: 20%;
+		margin-bottom: 1rem;
+		a {
+			display: block;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			text-indent: -999rem;
+			background-size: 80%;
+			background-repeat: no-repeat;
+			background-position: center;
+			&.first{
+				background-image: url("@{imgsrc}/index-img_03.png");
+			}
+			&.second{
+				background-image: url("@{imgsrc}/index-img_09.png");
+			}
+			&.three{
+				background-image: url("@{imgsrc}/index-img_11.png");
+			}
+			&.four{
+				background-image: url("@{imgsrc}/index-img_13.png");
+			}
+			&:active {
+				opacity: .7;
+			}
+		}
+	}
+}
+.position-bottom {
+	position: absolute;
+	bottom: .5rem;
+	right: 1rem;
+	li {
+		margin-left:1rem; 
+	}
+}
+
+.zf-card {
+	background: #ecac16;
+	border-radius: .4rem;
+	text-align: center;
+	margin-bottom: 1rem;
+	.zf-card-content {
+		color: white;
+		background:url("@{imgsrc}/zf-bg_03.gif") repeat-x bottom;
+		padding-bottom: 1rem;
+		h1 {
+			font-size: 1.25rem;
+			font-weight: normal;
+			margin: 0;
+			padding: 1rem 0 0rem;
+		}
+		h5 {
+			margin: 0;
+			font-weight: normal;
+			color: #eae3e3;
+		}
+	}
+	.zf-card-footer {
+		background: @white;
+		border-radius: 0 0 .4rem .4rem;
+		h4 {
+			margin: 0 ;
+			padding-bottom: .25rem;
+			line-height: 1.5rem;
+			font-weight: normal;
+		}
+	}
+}
+
+.title-wb {
+	color: white;
+	font-size: .75rem;
+	text-align: justify;
+	font-weight: normal;
+	margin-bottom: 2.5rem;
+}
+.agreement {
+	display: inline-block;
+	margin-top: .25rem;
+	font-size: .75rem;
+	padding-left:1rem;
+	background: url("@{imgsrc}/tanhao-ico_03.gif") no-repeat left center;
+	background-size: .8rem;
+	color: #b0afaf;
+	&:active {
+		opacity: .5;
+	}
+}

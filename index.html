@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>掌上订单</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="libs/sui/css/sm.min.css">
+    <link rel="stylesheet" href="libs/sui/css/sm-extend.min.css">
+    <link rel="stylesheet" href="css/style-global.css">
+</head>
+<body>
+    
+
+    <!-- page 容器 -->
+    <div class="page">
+
+        <!-- <header class="bar bar-nav bar-default">
+          <a external href="index.html" class="button button-link button-nav pull-left">
+            <span class="icon icon-left"></span>
+            返回
+          </a>
+          <h1 class="title">首页</h1>
+        </header> -->
+
+
+        <!-- 这里是页面内容区 -->
+        <div class="content content-index-bg">
+            <ul class="index-banner">
+                <li><a external class="first" href="#">视频点播</a></li>
+                <li><a external class="second" href="#">客房购物</a></li>
+                <li><a external class="three" href="#">客房送餐</a></li>
+                <li><a external class="four" href="#">客房服务</a></li>
+            </ul>
+            <ul class="inline-block-ul position-bottom">
+                <li><a external href="javascript:showModal(sewm)" class="button button-fill button-mini erweima">扫描二维码</a></li>
+                <li><a external href="javascript:showModal(zftz)" class="button button-fill button-mini zftz">资费通知</a></li>
+            </ul>
+        </div>
+
+        <!-- 扫描二维码 -->
+        <div class="mask" id="sewm">
+            <div class="modal-box">
+                <a external href="javascript:void(0)" class="ico-all close-btn">关闭</a>
+                <div class="modal-content">
+                    <div class="sao-ewm"></div>
+                </div>
+                <div class="modal-footer">
+                    <a external href="javascript:void(0)" class="button button-fill button-large button-round"> 扫一扫</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 资费通知 -->
+        <div class="mask in" id="zftz">
+            <div class="modal-box red">
+                <a external href="javascript:void(0)" class="ico-all close-btn">关闭</a>
+                <div class="modal-content">
+                    <div class="zf-card">
+                        <div class="zf-card-content">
+                            <h1>费用：10元/天</h1>
+                            <h5 class="gray-color">时长：开通时到酒店退房时间</h5>
+                        </div>
+                        <div class="zf-card-footer">
+                            <h4>支付方式：退房时前台结算</h4>
+                        </div>
+                    </div>
+                    <div class="title-wb">
+                        万部会员片库免费看、院线新片最早看、网络电影自由看、美国大片随时看
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a external href="javascript:void(0)" class="button button-fill button-large button-round"> 开 通</a>
+                    <div class="btn-right">
+                        <span class="agreement">用户协议</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            
+    </div>
+
+    
+
+    <script type='text/javascript' src='libs/sui/js/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='libs/sui/js/sm.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='libs/sui/js/sm-extend.min.js' charset='utf-8'></script>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
