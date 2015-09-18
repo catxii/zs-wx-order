@@ -217,6 +217,18 @@ ul,ol {
         }
     }
 }
+.no-border {
+    &.list-block ul:before,&.list-block ul:after {
+        display: none!important; 
+    }
+    li {
+        border: none;
+    }
+}
+&.list-block ul:before,&.list-block ul:after {
+    background-color: @border-gray-tint!important;
+}
+
 .list-font-info {  //订单信息类字体大小和黑色字体
     color: @black;
     font-size:@font-size-small;
@@ -331,8 +343,8 @@ ul,ol {
 // 边框颜色和样式
 @border-gray: 0.05rem solid #ccc; //标准下边框实线颜色
 @border-gray-dashed: 0.05rem dashed #ccc; //标准下边框虚线颜色
-@border-gray-tint: 0.05rem solid #d3d3d3; //浅色下边框实线颜色
-@border-gray-tint-dashed: 0.05rem dashed #efefef; //浅色下边框虚线颜色
+@border-gray-tint: 0.05rem solid #e9e9e9; //浅色下边框实线颜色
+@border-gray-tint-dashed: 0.05rem dashed #e9e9e9; //浅色下边框虚线颜色
 @border-gray-dark: 0.05rem solid #a5a5a5; //深灰色下边框实线颜色
 @border-gray-dark-dashed: 0.05rem dashed #a5a5a5; //深灰色下边框虚线颜色
 
@@ -421,5 +433,55 @@ ul,ol {
         width: 100%;
         background-size: 100%;
         height: 10rem;
+    }
+}
+
+
+.text-right {
+    text-align: right;
+    input {
+        text-align: right; 
+        font-size:@font-size-small!important;
+    }
+}
+
+.count-ul {
+    width: 4.5rem;
+    white-space: nowrap;
+    text-align: right;
+    .btn,.input{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .btn {
+        width: 1.5rem;
+        height: 1.5rem;
+        border:@border-gray;
+        background-size: .6rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 10rem;
+        overflow: hidden;
+        text-indent: 10rem;
+        &.del {
+            background-image: url("@{imgsrc}/del.png");
+        }
+        &.add {
+            background-image: url("@{imgsrc}/add.png");
+        }
+        &:active {
+            opacity: .4;
+        }
+    }
+    .input {
+        width: 23%;
+        input {
+            background:white;
+            line-height: 1.5rem;
+            height: 1.5rem;
+            text-align: center;
+            font-size: @font-size-small;
+            padding: 0;
+        }
     }
 }
