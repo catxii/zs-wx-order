@@ -27,3 +27,4 @@ $(".close-btn").click(function(){
       ]
     })
   });
+

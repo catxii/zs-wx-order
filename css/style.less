@@ -119,13 +119,6 @@
 	}
 }
 
-.arrow-right {
-	background: url("@{imgsrc}/arrow-right-img.png") no-repeat 95% center!important;
-	background-size: .3rem!important;
-	&.padding-right {
-		padding-right: 10%;
-	}
-}
 
 .value-info {
 	vertical-align:middle;
@@ -147,5 +140,95 @@
 	h6 {
 		font-size: @font-size-mini;
 		margin: 0;
+	}
+}
+
+.hotel-show-area {
+	position: relative;
+	height:10rem;
+	padding: 0;
+	img {
+		width: 100%;
+		min-height: 100%; 
+		min-width: 100%;
+	}
+	.swiper-pagination {
+		display: none;
+	}
+	.img-number {
+		background: @default-color;
+		width: 1.5rem;
+		height: 1.5rem;
+		line-height: 1.5rem;
+		text-align: center;
+		border-radius: 10rem;
+		color: white;
+		position: absolute;
+		bottom:.5rem;
+		right: .5rem;
+		z-index: 1;
+		font-size: @font-size-mini;
+		font-weight: normal;
+	}
+}
+
+.hotel-content {
+	.white-bg;
+	.padding;
+	text-align: justify;
+	color: #323232;
+	.hotel-info {
+		margin-top: .2rem;
+	}
+}
+
+.vertical-middle {
+	padding-top: 1.2rem!important;
+}
+
+.price-info {
+	position: absolute;
+	top: 10%;
+	margin-top: 0rem;
+	right: .5rem;
+	.price {
+		display: block;
+		text-align: center;
+		width: 100%;
+		line-height: 2rem;
+		color: @warning-color;
+		font-size:1.3rem;
+		.small {
+			font-size: 60%;
+		}
+	}
+}
+
+.item-media.border {
+	img {
+		border:@border-gray-tint;
+	}
+}
+
+.cart-ball {
+	background:@warning-color url("@{imgsrc}/cart_07.png") no-repeat center!important;
+	background-size:60%!important;
+	width:1.8rem;
+	height: 1.8rem;
+	display: inline-block; 
+	position: relative;
+	vertical-align: middle;
+	.num {
+		background:@red;
+		border-radius: 20rem;
+		position: absolute;
+		right: -.1rem;
+		top: -.1rem;
+		display: block;
+		width: .8rem;
+		height: .8rem;
+		text-align: center;
+		line-height: .8rem;
+		font-style: normal;
 	}
 }

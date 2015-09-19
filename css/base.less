@@ -26,7 +26,7 @@ html,body {
 
 // 颜色参数-功能性划分
 @background-content-color:#ebebeb; //背景内容区域颜色
-@default-color:#276ccb; //通用主色，用于通用的按钮背景颜色，云包公项目为该色值的蓝色 
+@default-color:#009fe8; //通用主色，用于通用的按钮背景颜色，云包公项目为该色值的蓝色 
 @default-dark-color:#0675bb; //通用主色加深，可用不限于按钮点击时。
 @opposite-dark-color:#fff; //反差深色的背景的浅色字体类用色
 @gray-tint-color:#f7f7f7; //浅灰色
@@ -43,7 +43,7 @@ html,body {
 @red:#ff0000;
 @orange:#ff9a14;
 @blue:#3b7ffd;
-@green:green;
+@green:#6dc54f;
 
 a {
     color: @blue;
@@ -52,6 +52,15 @@ a {
     color: @default-color;
     &:active {
         color: @default-dark-color;
+    }
+}
+.black-color {
+    color: @black;
+    &:visited {
+        color: @black;
+    }
+    &:active {
+        color: @default-color;
     }
 }
 .danger-color {    //危险操作字体用色
@@ -72,8 +81,25 @@ a {
     border-radius: 1rem;
     padding:0.1rem;
     font-size: 0.6rem;
+    &.ball {
+        font-size:1rem;
+        padding: .4rem;
+    }
     &.green-bg {
         background: @green;
+    }
+    &.blue-bg {
+        background: @default-color;
+    }
+    &.red-bg {
+        background: @red;
+    }
+    &.orange-bg {
+        background: @warning-color;
+    }
+    &.large {
+        font-size: @font-size-large;
+        padding: .25rem 1.5rem;
     }
 }
 
@@ -84,6 +110,54 @@ a {
 }
 .gray-bg {
     background: @gray-tint-color!important;
+}
+.round-bg {
+    display: inline-block;
+    margin-right: .25rem;
+    padding:0rem .2rem;
+    color: white;
+    border-radius: .1rem;
+    font-size: @font-size-mini;
+    &.blue {
+        background: @default-color;
+        &.border {
+            border-color: @default-color;
+            color: @default-color;
+        }
+    }
+    &.red {
+        background: @red;
+        &.border {
+            border-color:  @red;
+            color: @red;
+        }
+    }
+    &.green {
+        background: @green;
+        &.border {
+            border-color: @green;
+            color: @green;
+        }
+    }
+    &.orange {
+        background: @warning-color;
+        &.border {
+            border-color: @warning-color;
+            color: @warning-color;
+        }
+    }
+    &.sm {
+        width: .2rem;
+        height: .2rem;
+        border-radius: 30rem;
+        padding: 0;
+        vertical-align: middle;
+    }
+    &.border {
+        background: none;
+        border-style: solid;
+        border-width: .05rem;
+    }
 }
 
 
@@ -268,9 +342,19 @@ ul,ol {
 }
 .fix-bottom-bar {    //底部固定栏
     position: fixed;
-    bottom: 2.2rem;
+    bottom: 0rem;
+    left: 0;
+    right: 0;
     &.white-bar {
         background: @white;
+        border-top:@border-gray-tint;
+        line-height: 2rem;
+        .button {
+            .position-right;
+        }
+    }
+    &.gray-bar {
+        background: @gray-tint-color;
         border-top:@border-gray-tint;
         line-height: 2rem;
         .button {
@@ -445,6 +529,17 @@ ul,ol {
     }
 }
 
+.arrow-right {
+    background: url("@{imgsrc}/arrow-right-img.png") no-repeat 95% center!important;
+    background-size: .3rem!important;
+    &.padding-right {
+        padding-right: 10%;
+    }
+    &.padding-right-sm {
+        padding-right:.5rem;
+    }
+}
+
 .count-ul {
     width: 4.5rem;
     white-space: nowrap;
@@ -484,4 +579,11 @@ ul,ol {
             padding: 0;
         }
     }
+}
+
+
+.position-right-middle { 
+    position: absolute;
+    top: 50%;
+    right: .5rem;
 }
