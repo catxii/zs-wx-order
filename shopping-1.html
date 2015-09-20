@@ -64,7 +64,7 @@
                           <div class="item-after" style="display:none"></div>
                         </div>
                         <div class="item-subtitle">
-                          <span class="round-bg orange border">特价</span>
+                          <span class="round-bg red border">热卖</span>
                           <span class="round-bg blue border">推荐</span>
                         </div>
                         <div class="item-text price">
@@ -83,7 +83,7 @@
             
             <div class="fix-bottom-bar gray-bar padding clearfix">
                 <div class="pull-left">
-                  <span class="bg-ball orange-bg cart-ball">
+                  <span id="shopping-cart" class="bg-ball orange-bg cart-ball">
                     <i class="num">1</i>
                   </span>
                   <span>总金额:</span>
@@ -92,6 +92,69 @@
                 <div class="pull-right">
                   <a href="#" class="large bg-ball red-bg">选好了</a>
                 </div>
+            </div>
+
+            <div class="shopping-cart mask">
+              <div class="cart-more-box">
+                <div class="list-block">
+                  <ul>
+                    <li>
+                      <div class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title">
+                            <i class="round-bg green sm"></i>
+                            怀仁大酒店  201房间
+                          </div>
+                          <div class="item-after clear-all">
+                            <span class="icon icon-remove"></span> 清空购物车
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="list-block">
+                  <ul>
+                    <li>
+                      <div class="item-content white-bg">
+                        <div class="item-inner">
+                          <div class="item-title">
+                            <i class="round-bg red sm"></i>
+                            精品白沙
+                          </div>
+                          <div class="item-after">
+                            <span class="price">￥12</span>
+                          </div>
+                          <div class="count-ul ">
+                              <div class="btn del">减少</div>
+                              <div class="input num"><input type="tel" value="1"></div>
+                              <div class="btn add">增加</div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="item-content white-bg">
+                        <div class="item-inner">
+                          <div class="item-title">
+                            <i class="round-bg red sm"></i>
+                            精品白沙
+                          </div>
+                          <div class="item-after">
+                            <span class="price">￥12</span>
+                          </div>
+                          <div class="count-ul ">
+                              <div class="btn del">减少</div>
+                              <div class="input num"><input type="tel" value="1"></div>
+                              <div class="btn add">增加</div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    
+                  </ul>
+                </div>
+              </div>
             </div>
 
         </div>
@@ -109,6 +172,10 @@
     <script>
       $(function() {
         $(".swiper-container").swiper();
+        $("#shopping-cart").click(function(){
+          $(".shopping-cart").toggleClass("in");
+          
+        })
       });
     </script>
 </body>

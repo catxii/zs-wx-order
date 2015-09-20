@@ -105,6 +105,11 @@
 }
 
 .list-big-cp {
+	.item-media {
+		img {
+			border:@border-gray;
+		}
+	}
 	.item-title {
 		font-size: @font-size-large;
 	}
@@ -132,7 +137,7 @@
 	background-size: 1.5rem;
 	width: 90%;
 	margin:1rem auto;
-	padding-left: 2rem;
+	padding: .2rem 0 .2rem 2rem;
 	h1 {
 		font-size: @font-size-large;
 		margin: 0;
@@ -230,5 +235,99 @@
 		text-align: center;
 		line-height: .8rem;
 		font-style: normal;
+	}
+}
+
+.shopping-cart {
+	&.mask {
+		 bottom: 3rem;
+	}
+	.cart-more-box {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		background: #f0f0f0;
+		max-height: 60%;
+		overflow: auto;
+	}
+	.list-block {
+		margin: 0;
+	}
+	.item-inner {
+		padding:0;
+	}
+	.item-content {
+		padding:0 .5rem;
+		line-height: 1.5rem;
+		&.white-bg {
+			padding:.5rem;
+		}
+		.item-after {
+			// padding-right: 5rem;
+		}
+	}
+	.clear-all {
+		&:active {
+			color: @red;
+		}
+	}
+}
+
+
+.fix-content {
+	position: fixed;
+	top: 0;
+	bottom:3rem;
+	&.sidebar-nav {
+		left: 0;
+		right: 70%;
+		li {
+			padding: .5rem;
+			font-size: @font-size-default;
+			&.active {
+				background: @white;
+				color: @red;
+			}
+		}
+	}
+	&.scroll-box {
+		right: 0;
+		left: 30%;
+		background: @white;
+		overflow: auto;
+		.list-block {
+			margin: 0;
+			.item-content {
+				padding:1rem .25rem;
+				.item-inner {
+					padding:0;
+				}
+			}
+			.cp-img {
+				width: 2rem;
+				height: 2rem;
+				border-radius: 10rem;
+				border:@border-gray;
+			}
+			.item-after {
+				font-size: @font-size-mini;
+				text-align: left;
+				min-width: 4rem;
+			}
+		}
+	}
+}
+
+.lanmu-box {
+	margin-bottom: .5rem;
+	.list-block {
+		margin: 0;
+	}
+	.cp-info {
+		position: absolute;
+		right: 1rem;
+		top: 50%;
+		margin-top:-.5rem;
+
 	}
 }

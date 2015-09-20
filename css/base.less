@@ -101,6 +101,16 @@ a {
         font-size: @font-size-large;
         padding: .25rem 1.5rem;
     }
+    &.large-ball {
+        font-size:1.25rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        text-align: center;
+        line-height: 1.5rem;
+        display: inline-block;
+        padding: 0;
+        font-weight: 100;
+    }
 }
 
 //背景色定义
@@ -481,6 +491,7 @@ ul,ol {
     left: 0;
     bottom: 0;
     display: none;
+    z-index: 15;
     .black-opcity-bg;
     &.in {
         display: block;

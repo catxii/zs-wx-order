@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>掌上订单</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="libs/sui/css/sm.min.css">
+    <link rel="stylesheet" href="libs/sui/css/sm-extend.min.css">
+    <link rel="stylesheet" href="css/style-global.css">
+</head>
+<body>
+    
+
+    <!-- page 容器 -->
+    <div class="page">
+
+        <!-- <header class="bar bar-nav bar-default">
+          <a external href="index.html" class="button button-link button-nav pull-left">
+            <span class="icon icon-left"></span>
+            返回
+          </a>
+          <h1 class="title">首页</h1>
+        </header> -->
+
+
+        <!-- 这里是页面内容区 -->
+        <div class="content">
+            
+            <ul class="fix-content sidebar-nav" id="hotel_service_btn">
+              <li class="active"><i class="round-bg red sm"></i> 送物上门</li>
+              <li><i class="round-bg red sm"></i> 故障报修</li>
+              <li><i class="round-bg red sm"></i> 预订服务</li>
+            </ul>
+
+            <div class="fix-content scroll-box" id="hotel_service_cp">
+              <div class="list-block">
+                  <ul>
+                    <li>
+                      <div class="item-content white-bg">
+                        <div class="item-inner">
+                          <div class="item-title">
+                            <img class="cp-img" src="img/hotel-service_03.png" alt="">
+                          </div>
+                          <div class="item-after">
+                            送晾衣架
+                          </div>
+                          <div class="count-ul ">
+                              <div class="btn del">减少</div>
+                              <div class="input num"><input type="tel" value="1"></div>
+                              <div class="btn add">增加</div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="item-content white-bg">
+                        <div class="item-inner">
+                          <div class="item-title">
+                            <img class="cp-img" src="img/hotel-service_06.png" alt="">
+                          </div>
+                          <div class="item-after">
+                            送电熨斗
+                          </div>
+                          <div class="count-ul ">
+                              <div class="btn del">减少</div>
+                              <div class="input num"><input type="tel" value="1"></div>
+                              <div class="btn add">增加</div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="item-content white-bg">
+                        <div class="item-inner">
+                          <div class="item-title">
+                            <img class="cp-img" src="img/hotel-service_08.png" alt="">
+                          </div>
+                          <div class="item-after">
+                            送一次性拖鞋
+                          </div>
+                          <div class="count-ul ">
+                              <div class="btn del">减少</div>
+                              <div class="input num"><input type="tel" value="1"></div>
+                              <div class="btn add">增加</div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="item-content white-bg">
+                        <div class="item-inner">
+                          <div class="item-title">
+                            <img class="cp-img" src="img/hotel-service_10.png" alt="">
+                          </div>
+                          <div class="item-after">
+                            送洗漱用品
+                          </div>
+                          <div class="count-ul ">
+                              <div class="btn del">减少</div>
+                              <div class="input num"><input type="tel" value="1"></div>
+                              <div class="btn add">增加</div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="item-content white-bg">
+                        <div class="item-inner">
+                          <div class="item-title">
+                            <img class="cp-img" src="img/hotel-service_12.png" alt="">
+                          </div>
+                          <div class="item-after">
+                            送洗漱用品
+                          </div>
+                          <div class="count-ul ">
+                              <div class="btn del">减少</div>
+                              <div class="input num"><input type="tel" value="1"></div>
+                              <div class="btn add">增加</div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    
+                  </ul>
+              </div>
+              <div class="list-block" style="display:none;">
+                  <ul>
+                    <li>
+                      <div class="item-content white-bg">
+                        <div class="item-inner">
+                          <div class="item-title">
+                            <img class="cp-img" src="img/hotel-service_03.png" alt="">
+                          </div>
+                          <div class="item-after">
+                            送晾衣架
+                          </div>
+                          <div class="count-ul ">
+                              <div class="btn del">减少</div>
+                              <div class="input num"><input type="tel" value="1"></div>
+                              <div class="btn add">增加</div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="item-content white-bg">
+                        <div class="item-inner">
+                          <div class="item-title">
+                            <img class="cp-img" src="img/hotel-service_06.png" alt="">
+                          </div>
+                          <div class="item-after">
+                            送电熨斗
+                          </div>
+                          <div class="count-ul ">
+                              <div class="btn del">减少</div>
+                              <div class="input num"><input type="tel" value="1"></div>
+                              <div class="btn add">增加</div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    
+                  </ul>
+              </div>
+              <div class="list-block" style="display:none;">
+                  <ul>
+                    <li>
+                      <div class="item-content white-bg">
+                        <div class="item-inner">
+                          <div class="item-title">
+                            <img class="cp-img" src="img/hotel-service_03.png" alt="">
+                          </div>
+                          <div class="item-after">
+                            送晾衣架
+                          </div>
+                          <div class="count-ul ">
+                              <div class="btn del">减少</div>
+                              <div class="input num"><input type="tel" value="1"></div>
+                              <div class="btn add">增加</div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    
+                  </ul>
+              </div>
+            </div>
+
+            <div class="fix-bottom-bar gray-bar padding clearfix">
+                <div class="pull-left">
+                  <span>共</span>
+                  <span class="bg-ball orange-bg large-ball">
+                    2
+                  </span>
+                  <span>件</span>
+                </div>
+                <div class="pull-right">
+                  <a external href="#" class="large bg-ball red-bg" id="submit_order">选好了</a>
+                </div>
+            </div>
+
+
+        </div>
+
+            
+    </div>
+
+    
+
+    <script type='text/javascript' src='libs/sui/js/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='libs/sui/js/sm.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='libs/sui/js/sm-extend.min.js' charset='utf-8'></script>
+
+    <script src="js/app.js"></script>
+    <script>
+      $(function() {
+        //提交按钮
+        $("#submit_order").click(function(){
+          $.modal({
+              text: '<div class="success-dialog"><h1>您的订单已成功提交!</h1>',
+          })
+          setTimeout(function(){
+            $.closeModal();
+          },1000)
+          
+        })
+        // 侧边导航切换
+        $("#hotel_service_btn").on("click","li",function(){
+          var thisIndex = $(this).index();
+          $(this).addClass("active").siblings().removeClass("active");
+          $("#hotel_service_cp .list-block").eq(thisIndex).show().siblings().hide();
+        })
+      });
+    </script>
+</body>
+</html>
