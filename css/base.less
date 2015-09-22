@@ -33,6 +33,7 @@ html,body {
 @danger-color:#fc2a2a; //危险操作，警告文字
 @warning-color:#ff9c00; //强调文字颜色
 @warning-bg:#f7e2ca; //强调区域背景色
+@success-color:#6dc54d; //成功文字颜色
 @unimportance-color:#afafaf; //次要的文字颜色
 
 // 颜色种类划分
@@ -69,6 +70,9 @@ a {
 .warning-color {  //强调字体用色
     color: @warning-color;
 }
+.success-color {
+    color: @success-color;
+}
 .unimportance-color {  //次要字体用色
     color: @unimportance-color;
 }
@@ -96,6 +100,10 @@ a {
     }
     &.orange-bg {
         background: @warning-color;
+    }
+    &.white-bg {
+        background: @white;
+        border:@border-gray;
     }
     &.large {
         font-size: @font-size-large;
@@ -467,7 +475,7 @@ ul,ol {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center top;
-    &.ico-username {
+    &.ico-username { 
         width: .9rem;
         height: 2rem;
         background-image:url("@{imgsrc}/login-ico_03.gif");
@@ -478,6 +486,11 @@ ul,ol {
         height: 1.5rem;
         background-image: url("@{imgsrc}/close-btn_03.png")  
     } 
+    &.clock-ico {
+        width: .6rem;
+        height: .6rem;
+        background-image: url("@{imgsrc}/clock-ico_03.gif");
+    }
 }
 
 .black-opcity-bg {
