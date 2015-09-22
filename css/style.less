@@ -111,7 +111,7 @@
 		}
 	}
 	.item-title {
-		font-size: @font-size-large;
+		font-size: @font-size-big;
 	}
 	.item-subtitle {
 		font-size: @font-size-small;
@@ -325,9 +325,26 @@
 	}
 	.cp-info {
 		position: absolute;
-		right: 1rem;
+		right: .8rem;
 		top: 50%;
-		margin-top:-.5rem;
-
+		margin-top:-.7rem;
+	}
+	.item-media {
+		img {
+			width: 3.1rem!important;
+		}
+	}
+	.item-inner {
+		&.vertical-middle{
+			margin-left: .5rem;
+		}
+	}
+	.inline-block-ul {
+		background: none;
+		padding: 0;
+		li {
+			border:none;
+			margin-left: .8rem;
+		}
 	}
 }
