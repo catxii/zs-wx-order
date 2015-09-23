@@ -32,13 +32,16 @@
 
             <div class="list-block">
                 <ul>
-                  <li class="item-content item-link">
-                    <div class="item-inner arrow-right padding-right">
-                      <div class="item-title">
+                  <li class="item-content">
+                    <div class="item-inner ">
+                      <div class="item-title label">
                         <i class="round-bg green sm"></i> 收货地址
                       </div>
-                      <div class="item-title">房间号201</div>
-                      <div class="item-after">修改</div>
+                      <!-- <div class="item-title">房间号201</div>
+                      <div class="item-after" id="choseroom">修改</div> -->
+                      <div class="item-input text-right">
+                          <input type="text" placeholder="请选择房间号" id="roomnumber" >
+                        </div>
                     </div>
                   </li>
 
@@ -49,7 +52,7 @@
                           <i class="round-bg green sm"></i> 联系方式
                         </div>
                         <div class="item-input text-right">
-                          <input type="text" placeholder="便于酒店联系">
+                          <input type="text" placeholder="便于酒店联系" >
                         </div>
                       </div>
                     </div>
@@ -255,7 +258,23 @@
               $(this).addClass("disabled");
             };
           })
+
+          //选择房间
+          $("#roomnumber").picker({
+            toolbarTemplate: '<header class="bar bar-nav">\
+            <button class="button button-link pull-right close-picker">确定</button>\
+            <h1 class="title">请选择房间号</h1>\
+            </header>',
+            cols: [
+              {
+                textAlign: 'center',
+                 values: ['请选择房间号', '房间号 4', '房间号 5', '房间号 5S', '房间号 6', '房间号 6 ', '房间号 2', '房间号 Retina', '房间号 Air', '房间号 mini', '房间号 mini 2', '房间号 mini 3']
+              }
+            ]
+          });
         })
+
+
     </script>
 </body>
 </html>
